@@ -38,6 +38,10 @@ or just copy the .env.template file and fill it with your data.
 - PUT /api/users/:id
 - DELETE /api/users/:id
 
+## Eslint
+
+To run eslint: `npm run lint`
+
 ## License
 
 This project is open-sourced software licensed under the MIT License.
