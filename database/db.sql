@@ -1,13 +1,16 @@
-CREATE DATABASE firstapi;
+-- CREATE DATABASE firstapi;
 
-\l
+-- \l
 
-\c firstapi;
+-- \c firstapi;
+
+DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(40),
-    email TEXT
+    email TEXT NOT NULL UNIQUE,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
 INSERT INTO users (name, email)
