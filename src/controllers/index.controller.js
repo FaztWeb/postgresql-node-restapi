@@ -35,7 +35,6 @@ export const updateUser = async (req, res) => {
     [name, email, id]
   );
 
-  console.log(rows);
   return res.json(rows[0]);
 };
 
